@@ -1,0 +1,79 @@
+body{
+	margin: auto 0;
+}
+
+
+/*nav*/
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.navigation{
+	display: flex;
+	flex-wrap: nowrap;
+	list-style: none;
+	font-size: 0.7em;
+	
+}
+
+@media only screen and (max-width: 600px){
+	.navigation{
+		font-size: 0.5em;
+		padding: 0;
+	}
+}
+.navelem{
+	margin-right: 10px;
+	margin-left: 10px;
+	
+
+}
+.navelem a{
+	color: white;
+	text-decoration: none;
+}
+.contact{
+	margin-left: auto;
+}
+
+/*cover*/
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	padding-top: 50px;
+}
+.cover{
+	width: 19rem;
+}
+
+/*tableau grid*/
+
+.tableau{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr));
+}
+.cellule > img{
+	width: 100%;
+
+}
+.cellule{
+	background-color: #444;
+	padding: 70px;
+	margin: 10px;
+}
+
+footer{
+	text-align: center;
+	font-size: 0.9em;
+	
+}
+
+@media only screen and (max-width: 600px){
+	.yellow{
+		font-size: 0.8em;		
+	}
+}
